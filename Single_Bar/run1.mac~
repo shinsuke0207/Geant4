@@ -1,0 +1,14 @@
+# Macro file for takayama
+# 
+# To be run preferably in batch, without graphics:
+# % takayama run1.mac
+#
+#/run/numberOfWorkers 4
+/run/initialize
+#
+# Magnetic field
+#
+/globalField/setValue 0.00003 0 0.00004 tesla
+#/hits/verbose 2
+#/tracking/verbose 1
+/run/beamOn 10
