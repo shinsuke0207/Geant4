@@ -54,6 +54,7 @@ private:
   G4double Pos_esc_mu_z;
 
 
+  //配列の要素のユニーク数を数える関数
   template <class FwdIter>
   inline size_t unique_count(FwdIter first, FwdIter last)
   {

@@ -1,17 +1,8 @@
-/*
- * parameter.hh
- *
- *  Created on: 2016/04/15
- *      Author: katsumata
- */
-
 #ifndef INCLUDE_PARAMETER_HH_
 #define INCLUDE_PARAMETER_HH_
 
 
-// const G4double WorldLength_X = 0.75*m;
-// const G4double WorldLength_Y = 0.75*m;
-// const G4double WorldLength_Z = 0.75*m;
+//ジオメトリのパラメータの定義
 
 const G4double WorldLength_X = 0.75*m;
 const G4double WorldLength_Y = 0.75*m;

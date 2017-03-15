@@ -1,3 +1,4 @@
+#!/bin/sh
 message=$1
-ACCESS_TOKEN=43HfNSNajz0JhKhVahqBvqdEeyewhQKMNE1yzoCvYoz
+ACCESS_TOKEN= #your ACCESS_TOKEN
 curl -s -X POST -H "Authorization: Bearer $ACCESS_TOKEN" -F "message=$message" https://notify-api.line.me/api/notify
