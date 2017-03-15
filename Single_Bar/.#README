@@ -1,14 +1,27 @@
-Geant4(http://geant4.web.cern.ch/geant4/)を用いた、アクリル中でのミューオン、電子、チェレンコフ光の運動のモンテカルロ・シミュレーション。
+Geant4(http://geant4.web.cern.ch/geant4/)を用いた、アクリル中でのミューオン、電子、チェレンコフ光の運動のモンテカルロ・シミュレータ。
 使用した基本クラスの詳細は
 http://geant4.web.cern.ch/geant4/UserDocumentation/UsersGuides/ForApplicationDeveloper/fo/BookForAppliDev.pdf
 を参照。
-一次粒子（ミューオン）を一個入射させてから、全てのn次粒子の運動エネルギーが０になるまでを"Event"と言い、
-複数のイベントをとりまとめたものを"Run"と言う。
-作成した主な派生クラスは以下の通り。
+Geant4のインストール手順は
+http://geant4.web.cern.ch/geant4/UserDocumentation/UsersGuides/InstallationGuide/html/ch02.html
+を参照。
+なお、一次粒子（ミューオン）を一個入射させてから、全てのn次粒子の運動エネルギーが０になるまでを"Event"と言い、複数のイベントをとりまとめたものを"Run"と言う。
+作成した主な派生クラスは、以下の通り。
 
-ACerenkovDetectorConstruction アクリルやその他ジオメトリの定義を記述
-CerenkovPrimaryGeneratorAction 一次粒子（ミューオン）のパラメータ（エネルギー、初期座標、方向ベクトルなど）を定義
-SensitiveVolume アクリル中での全物理過程の情報を取得
-DetectorHit SensitiveVolumeで取得した情報をコンテナに詰め、CerenkovEventActionに渡す
-CerenkovEventAction Eventの最初と最後に実行する処理を記述
-CerenkovRunAction Runの最初と最後に実行する処理を記述
+・ACerenkovDetectorConstruction
+アクリルやその他ジオメトリの定義を記述
+
+・CerenkovPrimaryGeneratorAction
+一次粒子（ミューオン）のパラメータ（エネルギー、初期座標、方向ベクトルなど）を定義
+
+・SensitiveVolume
+アクリル中での全物理過程の情報を取得
+
+・DetectorHit
+SensitiveVolumeで取得した情報をコンテナに詰め、CerenkovEventActionに渡す
+
+・CerenkovEventAction
+Eventの最初と最後に実行する処理を記述
+
+・CerenkovRunAction
+Runの最初と最後に実行する処理を記述
