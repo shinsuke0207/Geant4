@@ -31,9 +31,6 @@
 #include "parameter.hh"
 
 
-#include "FresnelLens.hh"
-
-
 //........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 G4ThreadLocal G4GlobalMagFieldMessenger* ACerenkovDetectorConstruction::fMagFieldMessenger = 0;
